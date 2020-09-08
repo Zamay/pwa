@@ -26,7 +26,7 @@ document.getElementById('content').innerHTML = content;
 
 // Registering Service Worker
 if('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/pwa-examples/js13kpwa/sw.js');
+	navigator.serviceWorker.register('sw.js');
 };
 
 // Requesting permission for Notifications after clicking on the button
@@ -83,7 +83,7 @@ else {
 if('serviceWorker' in navigator) {
 	console.log('serviceWorker');
 	navigator.serviceWorker
-			 .register('/pwa-examples/js13kpwa/sw.js')
+			 .register('sw.js')
 			 .then(function() { console.log('Service Worker Registered'); });
   }
 
