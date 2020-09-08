@@ -80,6 +80,11 @@ else {
 	});
 }
 
+if( 'undefined' === typeof window){
+	console.log("oneSignal");
+	importScripts('https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js');
+}
+
 if('serviceWorker' in navigator) {
 	console.log('serviceWorker');
 	navigator.serviceWorker
